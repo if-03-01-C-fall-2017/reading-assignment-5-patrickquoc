@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -12,12 +10,58 @@
     <h1>Assignment 5</h1>
     <section>
       <h2>CSS: class selector</h2>
-      <p>The <strong>.class</strong> selector selects elements with a specific class attribute. <br>
+      <p>
+        The <strong>.class</strong> selector selects elements with a specific class attribute. <br>
         To select elements with a specific class, write a period (.) character, followed by the name of the class.<br>
         This is how it looks in a HTML document: <br>
         <em><​h1 class="example"></em><br>
         And this is how it looks in CSS: <br>
-        <em>.example { color: cyan; } </em></p>
+        <em>.example { color: cyan; } </em>
+      </p>
+      <h2>CSS: id selector</h2>
+      <p>
+        The <strong>#id</strong> selector styles the element with the specified id.  <br>
+        To select elements with a specific id, write a period (#) character, followed by the name of the id. <br>
+        This is how it looks in HTML: <br>
+        <em><​h1 id="header"></em><br>
+        And this is how it looks in CSS: <br>
+        <em>#example { color: cyan; } </em>
+      </p>
+    </section>
+    <section>
+      <h2>Floating</h2>
+      <p>
+        The <strong>float</strong> property is used for positioning and layout on web pages. It can have one of the following values:
+        <ul>
+          <li><strong>left</strong> - The element floats to the left</li>
+          <li><strong>right</strong> - The element floats to the right</li>
+          <li><strong>none</strong> - The element does not float. (Default)</li>
+          <li><strong>inherit</strong> - The element inherits the float value of its parent</li>
+        </ul>
+      </p>
+      <p>Example: float to the right <br>
+        <img id="float" src="example.jpg" alt="Example" style="width:150px;height:150px">
+        This is how it looks in HTML: <em><​img id="float" src="example.jpg" alt="Example" style="width:50px;height:50px"></em><br>
+        And this in CSS: <em>#float { float: right; }</em><br>
+        It is also possible to wrap a text with an image.
+      </p>
+      <p>
+        The <strong>clear</strong> property lets specifies what elements can float beside the cleared element and on which side. It can have one of the following values:
+        <ul>
+            <li><strong>none</strong> - Allows floating elements on both sides. (Default)</li>
+            <li><strong>left</strong> - No floating elements allowed on the left side</li>
+            <li><strong>right</strong> - No floating elements allowed on the right side</li>
+            <li><strong>both</strong>  - No floating elements allowed on either the left or the right side</li>
+            <li><strong>inherit</strong>  - The element inherits the clear value of its parent</li>
+        </ul>
+      </p>
+      <p>
+        <img id="clearimg" src="example.jpg" alt="Example" style="width:150px;height:150px">
+        <div id="cleartxt">
+        The most common way to use the clear property is after you have used a float property on an element.<br>
+        If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+        </div>
+      </p>
     </section>
   </body>
 </html>
